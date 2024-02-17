@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Приветственная страница</title>
+    <title>Пример страницы</title>
 </head>
 <body>
-    <h1>Добро пожаловать на нашу страницу!</h1>
-    <p id="greeting"></p>
-    <p id="time"></p>
 
-    <script src="script1.js"></script>
+<h1>Демонстрационная страница</h1>
+<p id="demo">Это пример текста.</p>
+
+<button onclick="changeText()">Нажми на меня</button>
+
+<script>
+function changeText() {
+    document.getElementById("demo").innerHTML = "Текст был изменен!";
+}
+</script>
+
 </body>
 </html>
