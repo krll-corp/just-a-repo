@@ -1,6 +1,6 @@
-alert("мои истории [Data was supervised and deleted]");
+alert("мои истории Божественные");
 let a = prompt('Какие мои истории?');
-if (a == "[Data was supervised and deleted]") {
+if (a == "Божественные") {
     alert("Бог одобряет");
 }  else { 
     alert('Тебе осталось жить два дня');
