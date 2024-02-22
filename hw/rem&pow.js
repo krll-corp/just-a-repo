@@ -21,7 +21,6 @@ console.log(a);
 console.log(b);
 console.log(c);
 */
-/*
-let age = +prompt("скільки вам років?");
-console.log(age >= 18
- 
+/* let age = +prompt("скільки вам років?");
+console.log(age >= 18);
+*/
