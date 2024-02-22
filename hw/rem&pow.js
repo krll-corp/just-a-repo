@@ -24,3 +24,7 @@ console.log(c);
 /* let age = +prompt("скільки вам років?");
 console.log(age >= 18);
 */
+let x = +prompt("Перша змінна");
+let y = +prompt("Друга змінна");
+y = x*y;
+x = x*y;
