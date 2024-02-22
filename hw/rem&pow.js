@@ -14,12 +14,9 @@ num *= 2;
 console.log(num);
 */
 /*
-a = 25 % 5;
-b = 17 % 4;
-c = 37 % 35;
-console.log(a);
-console.log(b);
-console.log(c);
+console.log(25 % 5);
+console.log(17 % 4);
+console.log(37 % 35);
 */
 /* let age = +prompt("скільки вам років?");
 console.log(age >= 18);
