@@ -1,8 +1,8 @@
-/* let num1 = +prompt("Перше число");
-let num2 = +prompt("Друге число");
-let rem = num1 % num2;
-let pow = num1 ** num2;
-console.log(`Залишок від ділення  ${num1}, на ${num2} дорівнює ${rem}. Результат зведеня ${num1}, у ступінь ${num2} дорівнює ${pow}.`);
+/* let number1 = +prompt("Перше число");
+let number2 = +prompt("Друге число");
+let rem = number1 % number2;
+let pow = number1 ** number2;
+console.log(`Залишок від ділення  ${number1}, на ${number2} дорівнює ${rem}. Результат зведеня ${number1}, у ступінь ${number2} дорівнює ${pow}.`);
 */
 let num = 20;
 num =+ 5;
