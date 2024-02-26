@@ -22,6 +22,7 @@ else {
     console.log(a);
 }
 */
+/*
 let a = +prompt("Перше число");
 let b = +prompt("Друге число");
 if (a > b){
@@ -32,4 +33,18 @@ else if (a === b) {
 }
 else {
     console.log("Друге число більше");
+}
+*/
+let a = +prompt("Введіть натуральне число");
+if (a == NaN) {
+    console.log("Це не число");
+}
+else if (a % 2 === 0) {
+console.log("Число парне");
+}
+else if (a % 2 === 1) {
+    console.log("Число непарне");
+}
+else {
+    console.log("число не натуральне");
 }
