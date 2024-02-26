@@ -15,7 +15,7 @@ let a = prompt("Що небуть");
 if (a == "" ) {
     console.log("Ви нічого не ввели");
 }
-else if (a === false) {
+else if (a === null) {
     console.log("Відміна вводу")
 }
 else {
@@ -70,24 +70,24 @@ else {
     console.log("Некоректний номер місяця");
 }
 */
-/*3
+/*
 let a = +prompt("Виберіть число");
 if (a  <= 80 && a >= 20 ){
     console.log("Число у діапазоні");
 }
 */
 
-/*let a = +prompt("Виберіть число");
-if (a > 80 || a < 20 || a != 80 || a != 20) {
-    console.log("Число не у дівпвзоні");
-}
-else {
-    console.log("Число у діапазоні");
-}
+/*
+let a = +prompt("Виберіть число");
+if (!(a < 20 || a > 80)){console.log("Число у діапазоні");} else{console.log("Число не у діапазоні");}
 */
-let a = +prompt("Who is there?");
+
+
+
+
+let a = prompt("Who is there?");
 if (a == "Admin") {
-    let b = +prompt("What is the password?");
+    let b = prompt("What is the password?");
     if (b === "TheMaster") {
 console.log("Welcome!");
     } else if (b === false) {
