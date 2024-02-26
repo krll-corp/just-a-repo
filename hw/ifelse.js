@@ -10,7 +10,7 @@ console.log("Ласкаво просимо!");
     console.log("Пароль не вірний");
 }
 */
-
+/*
 let a = prompt("Що небуть");
 if (a == "" ) {
     console.log("Ви нічого не ввели");
@@ -18,3 +18,7 @@ if (a == "" ) {
 else if (a === false) {
     console.log("Відміна вводу")
 }
+else {
+    console.log(a);
+}
+*/
