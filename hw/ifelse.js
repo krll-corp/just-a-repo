@@ -35,6 +35,7 @@ else {
     console.log("Друге число більше");
 }
 */
+/*
 let a = +prompt("Введіть натуральне число");
 if (a == NaN) {
     console.log("Це не число");
@@ -47,4 +48,23 @@ else if (a % 2 === 1) {
 }
 else {
     console.log("число не натуральне");
+}
+*/
+let a = +prompt("Введіть номер місяця");
+if ( a == 1 || a == 2 || a == 3|| a == 4 || a == 5 || a == 6 || a == 7 || a == 8 || a == 9 || a == 10 || a == 11 || a == 12) {
+    if (a == 1 || a == 2 || a == 12) {
+        console.log("Зима");
+    }
+    else if (a == 3 || a == 4 || a == 5) {
+        console.log("Весна");
+    }
+    else if (a == 6 || a == 7 || a == 8) {
+        console.log("Літо");
+    }
+    else {
+        console.log("Осінь");
+    }
+}
+else {
+    console.log("Некоректний номер місяця");
 }
