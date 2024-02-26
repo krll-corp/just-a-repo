@@ -22,3 +22,14 @@ else {
     console.log(a);
 }
 */
+let a = +prompt("Перше число");
+let b = +prompt("Друге число");
+if (a > b){
+    console.log("Перше число більше");
+}
+else if (a === b) {
+    console.log("Числа рівні");
+}
+else {
+    console.log("Друге число більше");
+}
