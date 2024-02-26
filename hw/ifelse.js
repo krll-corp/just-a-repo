@@ -76,10 +76,27 @@ if (a  <= 80 && a >= 20 ){
     console.log("Число у діапазоні");
 }
 */
-let a = +prompt("Виберіть число");
+
+/*let a = +prompt("Виберіть число");
 if (a > 80 || a < 20 || a != 80 || a != 20) {
     console.log("Число не у дівпвзоні");
 }
 else {
     console.log("Число у діапазоні");
+}
+*/
+let a = +prompt("Who is there?");
+if (a == "Admin") {
+    let b = +prompt("What is the password?");
+    if (b === "TheMaster") {
+console.log("Welcome!");
+    } else if (b === false) {
+        console.log("Canceled");
+    } else {
+console.log("Wrong password");
+    }
+} else if (a === false) {
+    console.log("Canceled");
+} else {
+    console.log("Wrong password");
 }
