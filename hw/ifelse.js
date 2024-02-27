@@ -52,12 +52,13 @@ else {
 */
 
 let a = +prompt("Введіть номер місяця");
-let isWinter = a == "1" || a == "2" || a == "12";
-let isSpring = a == "3" || a == "4" || a == "5";
-let isSommer = a == "6" || a == "7" || a == "8";
-let isAutumn = a == "9" || a == "10" || a == "11";
-if (isWinter || isSpring || isSommer || isAutumn) {
+let isWinter = a === 1|| a === 2 || a === 12;
+let isSpring = a === 3|| a === 4 || a === 5;
+let isSommer = a === 6|| a === 7 || a === 8;
+let isAutumn = a === 9|| a === 10 || a === 11;
+if (isWinter || isSpring || isSommer || isAutumn ) {
     if (isWinter) {
+
         console.log("Зима");
     }
     else if (isSpring) {
