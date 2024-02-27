@@ -50,16 +50,20 @@ else {
     console.log("число не натуральне");
 }
 */
-/*
+
 let a = +prompt("Введіть номер місяця");
-if ( a == 1 || a == 2 || a == 3|| a == 4 || a == 5 || a == 6 || a == 7 || a == 8 || a == 9 || a == 10 || a == 11 || a == 12) {
-    if (a == 1 || a == 2 || a == 12) {
+let isWinter = a == 1|| a == 2 || a == 12;
+let isSpring = a == 3|| a == 4 || a == 5;
+let isSommer = a == 6|| a == 7 || a == 8;
+let isAutumn = a == 9|| a == 10 || a == 11;
+if ( a == isWinter || a == isSpring || a == isSommer || a == isAutumn) {
+    if (a == isWinter) {
         console.log("Зима");
     }
-    else if (a == 3 || a == 4 || a == 5) {
+    else if (isSpring) {
         console.log("Весна");
     }
-    else if (a == 6 || a == 7 || a == 8) {
+    else if (isSommer) {
         console.log("Літо");
     }
     else {
@@ -69,7 +73,7 @@ if ( a == 1 || a == 2 || a == 3|| a == 4 || a == 5 || a == 6 || a == 7 || a == 8
 else {
     console.log("Некоректний номер місяця");
 }
-*/
+
 /*
 let a = +prompt("Виберіть число");
 if (a  <= 80 && a >= 20 ){
@@ -84,7 +88,7 @@ if (!(a < 20 || a > 80)){console.log("Число у діапазоні");} else{
 
 
 
-
+/*
 let a = prompt("Who is there?");
 if (a == "Admin") {
     let b = prompt("What is the password?");
@@ -100,3 +104,4 @@ console.log("Wrong password");
 } else {
     console.log("Wrong password");
 }
+*/
