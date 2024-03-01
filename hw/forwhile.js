@@ -114,3 +114,16 @@ for(let i = 1; i <= a; i++){
 }
 console.log(factorial);
 */
+let a = +prompt("Введіть кількість рядків");
+let i = 1;
+let b = "*";
+if (a > 0 && a % 1 === 0){
+while(i < a){
+    console.log(b);
+    b = b + "*";
+    i++;
+}
+}
+else {
+    console.log("Яне знаю таких натуральних чисел");
+}
