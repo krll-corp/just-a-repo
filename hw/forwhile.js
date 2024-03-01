@@ -4,14 +4,44 @@ let b = +prompt('Введіть число');
 let message = a > b ? 'Перше число більше' : a === b ? 'Числа рівні' : 'Дргуе число більше';
 alert(message);
 */
+/*
 let a = prompt('Введіть що небуть');
 switch(a){
     case null: 
-    alert('Відміна вводу');
+    console.log('Відміна вводу');
    break;
     case "":
-        alert('Ви нічого не ввели');
+        console.log('Ви нічого не ввели');
         break;
         default:
-            alert(a);
+            console.log(a);
+            break;
         }
+
+*/
+let a = +prompt("Введіть номер місяця");
+switch(a){
+    case 1 :
+    case 2: 
+    case 12:
+        console.log("Зима");
+        break;
+        case 3:
+        case 4: 
+        case 5:
+            console.log('Весна');
+            break;
+            case 6: 
+            case 7: 
+            case 8:
+                console.log("Літо");
+                break;
+                case 9: 
+                case 10: 
+                case 11:
+                    console.log("Осінь");
+                    break;
+                    default:
+                        console.log("Невірний номер місяця");
+                        break;
+}
