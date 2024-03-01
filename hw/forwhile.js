@@ -69,6 +69,7 @@ for(let i = a ;i <= end; i++) {
     }
 }
 */
+/*
 let a = +prompt("Початок");
 let end = +prompt("Кінець");
 while(a < end){
@@ -77,3 +78,31 @@ while(a < end){
     }
     a++
 }
+*/
+/*
+let mul;
+for(let i = 0; i < 10; i++){
+    mul = 3*i;
+    console.log(`3 помножити на ${i} дорівнює ${mul}`);
+}
+*/
+/*
+let mul;
+let i = 0;
+
+while (i < 10) {
+    mul = 3 * i;
+    console.log(`3 помножити на ${i} дорівнює ${mul}`);
+    i++;
+}
+*/
+/*
+let i = 0;
+let sum = 0;
+let num = 0;
+while(i < 5){
+    num = +prompt("Введіть число");
+    sum += num;
+    i++;
+}
+*/
