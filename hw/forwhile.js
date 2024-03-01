@@ -1,3 +1,4 @@
+"use strict"
 /*
 let a = +prompt('Введіть число');
 let b = +prompt('Введіть число');
@@ -37,7 +38,7 @@ switch(a){
             case 8:
                 console.log("Літо");
                 break;
-o                case 9: 
+               case 9: 
                 case 10: 
                 case 11:
                     console.log("Осінь");
