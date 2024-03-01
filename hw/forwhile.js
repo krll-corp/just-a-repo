@@ -7,11 +7,11 @@ alert(message);
 let a = prompt('Введіть що небуть');
 switch(a){
     case null: 
-    console.log('Відміна вводу');
+    alert('Відміна вводу');
    break;
     case "":
-        console.log('Ви нічого не ввели');
+        alert('Ви нічого не ввели');
         break;
         default:
-            console.log(a);
+            alert(a);
         }
