@@ -19,6 +19,7 @@ switch(a){
         }
 
 */
+/*
 let a = +prompt("Введіть номер місяця");
 switch(a){
     case 1 :
@@ -36,7 +37,7 @@ switch(a){
             case 8:
                 console.log("Літо");
                 break;
-                case 9: 
+o                case 9: 
                 case 10: 
                 case 11:
                     console.log("Осінь");
@@ -44,4 +45,15 @@ switch(a){
                     default:
                         console.log("Невірний номер місяця");
                         break;
+}
+*/
+/*
+for(let i = 0; i<=10; i++){
+    console.log(i);
+}
+*/
+let i = 0;
+while(i <= 10){
+    console.log(i);
+    i++;
 }
