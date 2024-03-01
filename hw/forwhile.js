@@ -53,8 +53,27 @@ for(let i = 0; i<=10; i++){
     console.log(i);
 }
 */
+/*
 let i = 0;
 while(i <= 10){
     console.log(i);
     i++;
+}
+*/
+/*
+let a = +prompt("Початок");
+let end = +prompt("Кінець");
+for(let i = a ;i <= end; i++) {
+    if (i % 5 === 0){
+        console.log(i);
+    }
+}
+*/
+let a = +prompt("Початок");
+let end = +prompt("Кінець");
+while(a < end){
+    if (a % 5 === 0){
+        console.log(a);
+    }
+    a++
 }
