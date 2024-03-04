@@ -21,12 +21,24 @@ function max(num1, num2){
     }
 }
 */
+/*
 function pow(x, n){
     for(i; i<=n; i++){
         x *= x;
     }
     return x;
 }
-
-
-
+*/
+/*
+function sumOrConcatenation(value1, value2) {
+    if (value1 === undefined || value2 === undefined || value1 === null || value2 === null) {
+        console.log("Результат суми: 30");
+    } else if (typeof value1 === 'string' || typeof value2 === 'string') {
+        console.log(`Результат конкатенації: ${String(value1) + String(value2)}`);
+    } else if (typeof value1 === 'number' && typeof value2 === 'number') {
+        console.log(`Результат суми: ${value1 + value2}`);
+    } else {
+        console.log("Некоректні аргументи");
+    }
+}
+*/
