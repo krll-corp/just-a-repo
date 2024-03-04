@@ -51,5 +51,5 @@ function Fb(number){
     a = b;
     b = c;
     }
-    return(c)
+    return c;
 }
