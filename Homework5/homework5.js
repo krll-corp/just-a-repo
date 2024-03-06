@@ -8,12 +8,12 @@ function mulBy5(num){
     console.log(`5 * ${num} = ${num * 5}`);
 }
 */
-/*
+
 function max(num1, num2){
- (num1 > num2 ?  num1 : num2)
+ return(num1 > num2 ?  num1 : num2);
     
 }
-*/
+
 /*
 function pow(x, n){
     for(i; i<=n; i++){
@@ -23,9 +23,7 @@ function pow(x, n){
 }
 */
 /*
-function sumOrConcatenation(value1, value2) {
-    if (value1 === undefined || value2 === undefined || value1 === null || value2 === null) {
-        console.log("Результат суми: 30");
+function sumOrConcatenation(value1 = 20, value2 = 10) {
     } else if (typeof value1 === 'string' || typeof value2 === 'string') {
         console.log(`Результат конкатенації: ${String(value1) + String(value2)}`);
     } else if (typeof value1 === 'number' && typeof value2 === 'number') {
