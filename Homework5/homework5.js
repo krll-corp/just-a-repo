@@ -8,14 +8,15 @@ function mulBy5(num){
     console.log(`5 * ${num} = ${num * 5}`);
 }
 */
-
+/*
 function max(num1, num2){
  return(num1 > num2 ?  num1 : num2);
     
 }
-
+*/
 /*
-function pow(x, n){
+function pow(a, n){
+    let x = a;
     for(i; i<=n; i++){
         x *= x;
     }
