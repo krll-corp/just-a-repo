@@ -23,8 +23,8 @@ function pow(x, n){
 }
 */
 /*
-function sumOrConcatenation(value1 = 20, value2 = 10) {
-    } else if (typeof value1 === 'string' || typeof value2 === 'string') {
+function sumOrConcatenation(value1 = 20, value2 = 10){ 
+    if (typeof value1 === 'string' || typeof value2 === 'string') {
         console.log(`Результат конкатенації: ${String(value1) + String(value2)}`);
     } else if (typeof value1 === 'number' && typeof value2 === 'number') {
         console.log(`Результат суми: ${value1 + value2}`);
@@ -34,7 +34,7 @@ function sumOrConcatenation(value1 = 20, value2 = 10) {
 }
 */
 function Fb(number){
-    let a = 0;
+    let a = 1;
     let b = 1;
     let c = 0
     for(let i = 0; i<number; i++){
