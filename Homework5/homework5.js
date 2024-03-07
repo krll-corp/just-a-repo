@@ -14,15 +14,20 @@ function max(num1, num2){
     
 }
 */
+
+
 /*
-function pow(a, n){
-    let x = a;
-    for(i; i<=n; i++){
-        x *= x;
+function pow(a, n) {
+    let result = a;
+    for (let i = 1; i < n; i++) {
+        result *= a;
     }
-    return x;
+    return result;
 }
 */
+
+
+
 /*
 function sumOrConcatenation(value1 = 20, value2 = 10){ 
     if (typeof value1 === 'string' || typeof value2 === 'string') {
@@ -34,14 +39,11 @@ function sumOrConcatenation(value1 = 20, value2 = 10){
     }
 }
 */
+
 function Fb(number){
-    let a = 1;
-    let b = 1;
-    let c = 0
-    for(let i = 0; i<number; i++){
-    c = a + b;
-    a = b;
-    b = c;
+    let fib = [0, 1];
+    for(let i = 2; i <= number; i++){
+        fib[i] = fib[i - 1] + fib[i - 2];
     }
-    return c;
+    return fib[number];
 }
