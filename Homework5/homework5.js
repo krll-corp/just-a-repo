@@ -16,21 +16,26 @@ function max(num1, num2){
 
 
 function pow(a, n) {
-    let result = a;
-    for (let i = 1; i < n; i++) {
-        result *= a;
+    if (!a && !n) {return 9} else {
+        let result = a;
+        for (let i = 1; i < n; i++) {
+            result *= a;
+        }
+        return result;
     }
-    return result;
 }
 
 
 function sumOrConcatenation(value1 = 20, value2 = 10){ 
-    if (typeof value1 === 'string' || typeof value2 === 'string') {
-        console.log(`Результат конкатенації: ${String(value1) + String(value2)}`);
-    } else if (typeof value1 === 'number' && typeof value2 === 'number') {
-        console.log(`Результат суми: ${value1 + value2}`);
-    } else {
-        console.log("Некоректні аргументи");
+    if (!value1 && !value2) {console.log("30")} else {
+
+        if (typeof value1 === 'string' || typeof value2 === 'string') {
+            console.log(`Результат конкатенації: ${String(value1) + String(value2)}`);
+        } else if (typeof value1 === 'number' && typeof value2 === 'number') {
+            console.log(`Результат суми: ${value1 + value2}`);
+        } else {
+            console.log("Некоректні аргументи");
+        }
     }
 }
 
