@@ -41,9 +41,13 @@ function sumOrConcatenation(value1 = 20, value2 = 10){
 
 
 function Fb(number){
-    let fib = [0, 1];
-    for(let i = 2; i <= number; i++){
-        fib[i] = fib[i - 1] + fib[i - 2];
+    let a = 1;
+    let b = 1;
+    let c = 1;
+    for(let i = 0; i<number; i++){
+        c = a + b;
+        a = b;
+        b = c;
     }
-    return fib[number];
+    return c;
 }
