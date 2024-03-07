@@ -42,8 +42,8 @@ function sumOrConcatenation(value1 = 20, value2 = 10){
 
 function Fb(number){
     let a = 1;
-    let b = 1;
-    let c = 1;
+    let b = 0;
+    let c = 0;
     for(let i = 0; i<number; i++){
         c = a + b;
         a = b;
