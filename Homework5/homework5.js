@@ -1,22 +1,20 @@
 "use strict"
-/*function sum(num1, num2){
+function sum(num1, num2){
     return num1 + num2;
 }
-*/
-/*
+
+
 function mulBy5(num){
     console.log(`5 * ${num} = ${num * 5}`);
 }
-*/
-/*
+
+
 function max(num1, num2){
  return(num1 > num2 ?  num1 : num2);
     
 }
-*/
 
 
-/*
 function pow(a, n) {
     let result = a;
     for (let i = 1; i < n; i++) {
@@ -24,11 +22,8 @@ function pow(a, n) {
     }
     return result;
 }
-*/
 
 
-
-/*
 function sumOrConcatenation(value1 = 20, value2 = 10){ 
     if (typeof value1 === 'string' || typeof value2 === 'string') {
         console.log(`Результат конкатенації: ${String(value1) + String(value2)}`);
@@ -38,7 +33,7 @@ function sumOrConcatenation(value1 = 20, value2 = 10){
         console.log("Некоректні аргументи");
     }
 }
-*/
+
 
 function Fb(number){
     let fib = [0, 1];
