@@ -24,7 +24,7 @@ function generateRandomFloat(n) {
 }
 function isPalindrom(str){
     let Wordpalindrom = str;
-    Wordpalindrom = Wordpalindrom.toLowerCase().raplaceAll(" ");
+    Wordpalindrom = Wordpalindrom.toLowerCase().raplaceAll(" ", "");
     let Wordpalindromafter = reverseString(Wordpalindrom);
     return Wordpalindrom === Wordpalindromafter;
 
