@@ -21,4 +21,8 @@ function convertToBinary(num){
 function generateRandomFloat(n) {
    return Math.floor(Math.random() * 100).toFixed(n);
 }
-function
+function isPalindrom(str){
+    let Wordpalindrom = str;
+    Wordpalindrom = Wordpalindrom.toLowerCase().raplaceAll(" " "" );
+
+}
