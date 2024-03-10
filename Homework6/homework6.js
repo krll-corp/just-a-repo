@@ -13,3 +13,12 @@ function reverseString(str) {
     }
     return reversed;
 }
+function convertToBinary(num){
+    let outputNumber = num;
+    outputNumber = outputNumber.toString(2);
+    return outputNumber;
+}
+function generateRandomFloat(n) {
+   return Math.floor(Math.random() * 100).toFixed(n);
+}
+function
