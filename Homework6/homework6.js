@@ -6,6 +6,7 @@ function capitalize(word){
     let wordreturn = firstLetter.concat(word1);
     return wordreturn;
 }
+
 function reverseString(str) {
     let reversed = "";
     for (let i = str.length - 1; i >= 0; i--) {
@@ -23,6 +24,8 @@ function generateRandomFloat(n) {
 }
 function isPalindrom(str){
     let Wordpalindrom = str;
-    Wordpalindrom = Wordpalindrom.toLowerCase().raplaceAll(" " "" );
+    Wordpalindrom = Wordpalindrom.toLowerCase().raplaceAll(" ");
+    let Wordpalindromafter = reverseString(Wordpalindrom);
+    return Wordpalindrom === Wordpalindromafter;
 
 }
