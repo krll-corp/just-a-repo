@@ -37,3 +37,26 @@ function sumOfNumbers(number) {
     }
     return sum;
 }
+function generateNumberInLimit(start, end) {
+    return Math.floor(Math.random() * (end - start + 1)) + start;
+}
+function toCamelCase(str) {
+    let camelCaseStr = '';
+    let capitalizeNext = false;
+
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) === '_') {
+            capitalizeNext = true;
+        } else {
+            if (capitalizeNext) {
+                camelCaseStr += str.charAt(i).toUpperCase();
+                capitalizeNext = false;
+            } else {
+                camelCaseStr += str.charAt(i);
+            }
+        }
+    }
+
+    return camelCaseStr;
+}
+
