@@ -1,20 +1,17 @@
 let array = [2, 7, 6, 3, 9, 1, 4, 5, 8, 10];
-console.log(array);
+array.forEach(element => console.log(element));
 let newArray = array.map(element => element * 5);
-function sort(arr) {
-    return arr.slice().sort((a, b) => a - b);
-}
-function sortReverse(arr) {
-    return arr.slice().sort((a, b) => b - a);
-}
-let sum = array.reduce((acc, curr) => acc + curr, 0);
+let array = [2, 7, 6, 3, 9, 1, 4, 5, 8, 10];
+let sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum);
+
 function sortByLength(arr) {
-    return arr.slice().sort((a, b) => a.length - b.length);
+    return arr.sort((a, b) => a.length - b.length);
 }
 function unique(arr) {
-    return [...new Set(arr)];
+    return arr.filter((value, index, self) => self.indexOf(value) === index);
 }
-let strings = ["Привіт", "Світ", "Привіт", "Світ", "Привіт", "Привіт", "Світ", "Світ", ":-O"];
+console.log(sortedCarBrands);
 function mostFrequentNumber(arr) {
     let frequency = {};
     arr.forEach(num => {
