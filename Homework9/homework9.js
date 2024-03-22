@@ -20,3 +20,16 @@ function mergeArrays(...arrays) {
 
     return Array.from(mergedArray);
 }
+function aclean(array) {
+    let map = new Map();
+
+    for (let word of array) {
+        let sortedWord = word.toLowerCase().split('').sort().join('');
+
+        if (!map.has(sortedWord)) {
+            map.set(sortedWord, word);
+        }
+    }
+
+    return Array.from(map.values());
+}
