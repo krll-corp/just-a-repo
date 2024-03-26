@@ -5,20 +5,7 @@ map1.set('12', 'number');
 map1.set("Vasya",'string' );
 map1.set({}, 'Objekt');
 map1.set(undefined, "undefined");
-map1.set(null, "null");
-map1.set(Symbol(), "Symbol");
-let NewObject = Object.fromEntries(map);
-let map2 = new Map(Object.entries(NewObject));
-function mergeArrays(...arrays) {
-    let mergedArray = new Set();
-
-    arrays.forEach(array => {
-        array.forEach(item => {
-            mergedArray.add(item);
-        });
-    });
-
-    return Array.from(mergedArray);
+map1.set(null, "null") Array.from(mergedArray);
 }
 function aclean(array) {
     let map = new Map();
@@ -137,4 +124,4 @@ books[Symbol.iterator] = function() {
 for (const book of books) {
   console.log(book);
 }
-мл
+
