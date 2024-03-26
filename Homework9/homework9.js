@@ -1,12 +1,12 @@
-let map = new Map();
-map.set('123n', 'Bigint');
-map.set('true', 'boolian');
-map.set('12', 'number'); 
-map.set("Vasya",'string' );
-map.set("NaN", 'number');
-map.set("false", "boolian");
-map.set("53178319047619n", "bigint");
-map.set("q", "");
+let map1 = new Map();
+map1.set('123n', 'Bigint');
+map1.set('true', 'boolian');
+map1.set('12', 'number'); 
+map1.set("Vasya",'string' );
+map1.set({}, 'Objekt');
+map1.set(undefined, "undefined");
+map1.set(null, "null");
+map1.set(Symbol(), "Symbol");
 let NewObject = Object.fromEntries(map);
 let map2 = new Map(Object.entries(NewObject));
 function mergeArrays(...arrays) {
@@ -113,7 +113,6 @@ books[Symbol.iterator] = function() {
   let categories = Object.values(this);
   let categoryIndex = 0;
   let authorIndex = 0;
-
   return {
     next() {
       if (categoryIndex >= categories.length) {
@@ -127,7 +126,6 @@ books[Symbol.iterator] = function() {
         authorIndex = 0;
         return this.next();
       }
-      
       let books = categories[categoryIndex][authors[authorIndex]].map(book => book.title);
       let result = { value: books[authorIndex], done: false };
       authorIndex++;
@@ -136,7 +134,7 @@ books[Symbol.iterator] = function() {
     }
   };
 };
-
 for (const book of books) {
   console.log(book);
 }
+мл
