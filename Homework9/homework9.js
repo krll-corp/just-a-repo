@@ -100,6 +100,7 @@ books[Symbol.iterator] = function() {
   let categories = Object.values(this);
   let categoryIndex = 0;
   let authorIndex = 0;
+  let bookIndex = 0; 
   return {
     next() {
       if (categoryIndex >= categories.length) {
@@ -113,15 +114,19 @@ books[Symbol.iterator] = function() {
         authorIndex = 0;
         return this.next();
       }
-      let books = categories[categoryIndex][authors[authorIndex]].map(book => book.title);
-      let result = { value: books[authorIndex], done: false };
-      authorIndex++;
+      
+      let books = categories[categoryIndex][authors[authorIndex]]; 
+      
+      if (bookIndex >= books.length) {
+        authorIndex++;
+        bookIndex = 0; 
+        return this.next();
+      }
+      
+      let result = { value: books[bookIndex], done: false };
+      bookIndex++; 
 
       return result;
     }
   };
 };
-for (const book of books) {
-  console.log(book);
-}
-
