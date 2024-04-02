@@ -9,9 +9,9 @@ let employee = {
   position: "Senior",
   salary: "2000",
 }
-function showInfo(){
-  console.log(`${this.fullName} на позиції ${this.position} заробляє ${this.salaryj}`);
+function showInfo(currency){
+  console.log(`${this.fullName} на позиції ${this.position} заробляє ${this.salaryj} ${currency}`);
 }
-apply(showInfo(), employee1);
+apply(showInfo(), employee1, "$");
 
-apply(showInfo(), employee2);
+apply(showInfo(), employee2, "$");
