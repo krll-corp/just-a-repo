@@ -9,11 +9,9 @@ let employee = {
   position: "Senior",
   salary: "2000",
 }
-function showInfo(any_object = {
-  fullName: "nikto",
-  position: "nikto",
-  salary: "0"
-}){
-  console.log();
+function showInfo(){
+  console.log(`${this.fullName} на позиції ${this.position} заробляє ${this.salaryj}`);
 }
-apply(emp);
+apply(showInfo(), employee1);
+
+apply(showInfo(), employee2);
