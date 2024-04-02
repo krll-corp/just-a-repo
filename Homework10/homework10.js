@@ -15,3 +15,6 @@ function showInfo(currency){
 apply(showInfo(), employee1, "$");
 
 apply(showInfo(), employee2, "$");
+function showInfoOfEmployee1(currency) = showInfo().bind(employee1);
+
+function showInfoOfEmployee2(currency) = showInfo().bind(employee2);
