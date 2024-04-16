@@ -94,4 +94,4 @@ const triangle3 = new Triangle(4, 4, 4);
 
 triangle1.getSquare(); 
 triangle2.getSquare(); 
-triangle3.getSquare(); 
+triangle3.getSquare();  
