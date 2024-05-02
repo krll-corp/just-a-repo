@@ -65,19 +65,40 @@ function Timer() {
 }
 
 // РІВЕНЬ ІІІ:
+const customers = {
+ "Katy Perry": [
+  { name: "Borsh", time: 5000 },
+  { name: "vareniki", time: 1000 },
+  { name: "uzvar", time: 500 },
+ ],
+ "Cristiano Ronaldo": [
+  { name: "Soup", time: 7000 },
+  { name: "porridge", time: 1000 },
+  { name: "water", time: 100 },
+ ],
+ "Jason Statham": [
+  { name: "fried potatoes", time: 6000 },
+  { name: "steak", time: 10000 },
+  { name: "juice", time: 100 },
+ ],
+};
 function cook(customers) {
-    for (const customer in customers) {
-        const orders = customers[customer];
-        let totalTime = 0;
-        for (const order of orders) {
-            totalTime += order.time;
-            setTimeout(() => {
-                const dishes = orders.map((order) => order.name).join(",");
-                console.log(`Шановний відвідувач, ${customer}, ваше замовлення готове: ${dishes}. Смачного!`);
-            }, totalTime);
-        }
-    }
+  for (const customer in customers) {
+    const orders = customers[customer];
+    let lastOrderTime = 0;
+    orders.forEach(order => {
+      if (order.time > lastOrderTime) {
+        lastOrderTime = order.time;
+      }
+    });
+    setTimeout(() => {
+      const lastOrder = orders[orders.length - 1];
+      console.log(`Шановний ${customer}, ваше замовлення "${lastOrder.name}" готове. Смачного!`);
+    }, lastOrderTime);
+  }
 }
+
+cook(customers);
 
 // Тестування:
 console.log("Завдання 1:");
