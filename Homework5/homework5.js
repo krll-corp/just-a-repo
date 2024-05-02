@@ -15,17 +15,18 @@ function max(num1, num2){
 }
 
 
-function pow(a, n) {
-    if (a === 0 && n === 0) {
+function pow(x, n) {
+    if (x === undefined && n === undefined) {
         return 9;
     } else {
-        let result = a;
-        for (let i = 1; i < n; i++) {
-            result *= a;
+        let result = 1;
+        for (let i = 0; i < n; i++) {
+            result *= x;
         }
         return result;
     }
 }
+
 
 function sumOrConcatenation(value1 = 20, value2 = 10) { 
     if (value1 === 0 && value2 === 0) {
