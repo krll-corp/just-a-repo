@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Changer</title>
+<style>
+    input[type="text"] {
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        padding: 5px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<input type="text" id="colorInput" placeholder="Введіть назву кольору">
+<input type="submit" value="Створити" onclick="createButton()">
+
+<script>
+    function createButton() {
+        var color = document.getElementById("colorInput").value;
+        var colorButton = document.createElement("button");
+        colorButton.textContent = color;
+        colorButton.style.backgroundColor = color;
+        colorButton.onclick = function() {
+            changeBackgroundColor(color);
+        };
+        
+        document.body.appendChild(colorButton);
+    }
+    
+    function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+
+</body>
+</html>

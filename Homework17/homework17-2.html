@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<style>
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .calculator input {
+        margin-bottom: 10px;
+    }
+    .calculator input[type="submit"] {
+        width: 100%;
+        padding: 5px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="calculator">
+    <input type="number" id="value1" placeholder="Введіть перше число">
+    <input type="number" id="value2" placeholder="Введіть друге число">
+    <input type="submit" value="=" onclick="calculate()">
+    <input type="number" id="result" readonly>
+</div>
+
+<script>
+    function calculate() {
+        var value1 = parseFloat(document.getElementById("value1").value);
+        var value2 = parseFloat(document.getElementById("value2").value);
+        var operator = document.getElementById("operator").value;
+        var result;
+        
+        switch (operator) {
+            case '+':
+                result = value1 + value2;
+                break;
+            case '-':
+                result = value1 - value2;
+                break;
+            case '*':
+                result = value1 * value2;
+                break;
+            case '/':
+                result = value1 / value2;
+                break;
+            default:
+                result = "Непідтримувана операція";
+        }
+        
+        document.getElementById("result").value = result;
+    }
+</script>
+
+</body>
+</html>
