@@ -3,63 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculator</title>
+<title>Калькулятор</title>
 <style>
-    .calculator {
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        margin: 0 auto;
-    }
-    .calculator input {
-        margin-bottom: 10px;
-    }
-    .calculator input[type="submit"] {
-        width: 100%;
-        padding: 5px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
+  input {
+    margin-bottom: 10px;
+  }
 </style>
 </head>
 <body>
-
-<div class="calculator">
-    <input type="number" id="value1" placeholder="Введіть перше число">
-    <input type="number" id="value2" placeholder="Введіть друге число">
-    <input type="submit" value="=" onclick="calculate()">
-    <input type="number" id="result" readonly>
-</div>
+<h1>Калькулятор</h1>
+<form id="calculator-form">
+  <input type="number" id="num1" placeholder="Введіть перше число" required>
+  <select id="operator" required>
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" id="num2" placeholder="Введіть друге число" required>
+  <button type="submit">Розрахувати</button>
+</form>
+<p id="result"></p>
 
 <script>
-    function calculate() {
-        var value1 = parseFloat(document.getElementById("value1").value);
-        var value2 = parseFloat(document.getElementById("value2").value);
-        var operator = document.getElementById("operator").value;
-        var result;
-        
-        switch (operator) {
-            case '+':
-                result = value1 + value2;
-                break;
-            case '-':
-                result = value1 - value2;
-                break;
-            case '*':
-                result = value1 * value2;
-                break;
-            case '/':
-                result = value1 / value2;
-                break;
-            default:
-                result = "Непідтримувана операція";
-        }
-        
-        document.getElementById("result").value = result;
-    }
-</script>
+document.getElementById('calculator-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const num1 = parseFloat(document.getElementById('num1').value);
+  const num2 = parseFloat(document.getElementById('num2').value);
+  const operator = document.getElementById('operator').value;
 
+ 
+  let result;
+  switch (operator) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    case '/':
+      result = num1 / num2;
+      break;
+    default:
+      result = 'Неправильна операція';
+  }
+
+  document.getElementById('result').textContent = `Результат: ${result}`;
+});
+</script>
 </body>
 </html>
