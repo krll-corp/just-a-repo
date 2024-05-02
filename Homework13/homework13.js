@@ -1,4 +1,4 @@
-function setLength(obj) {
+ function setLength(obj) {
   const keys = Object.keys(obj);
   obj.length = keys.length;
   return obj;
