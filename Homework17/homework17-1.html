@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouse and Keyboard Events</title>
+</head>
+<body>
+<button id="myButton">Натисніть на мене</button>
+<h1 id="display"></h1>
+<input type="text" id="inputText" oninput="updateDisplay()">
+<script>
+document.getElementById("myButton").addEventListener("click", function(event) {
+    if (event.button === 0) {
+        console.log("Клік");
+    } else if (event.button === 2) {
+        console.log("Правий клік");
+    }
+});
+
+document.getElementById("myButton").addEventListener("dblclick", function(event) {
+    if (event.button === 0) {
+        console.log("Подвійний клік");
+    }
+});
+
+document.addEventListener("keydown", function(event) {
+    alert(event.key);
+});
+
+function updateDisplay() {
+    const inputValue = document.getElementById('inputText').value;
+    document.getElementById('display').textContent = inputValue;
+}
+</script>
+</body>
+</html>
