@@ -16,7 +16,9 @@ function max(num1, num2){
 
 
 function pow(a, n) {
-    if (!a && !n) {return 9} else {
+    if (a === 0 && n === 0) {
+        return 9;
+    } else {
         let result = a;
         for (let i = 1; i < n; i++) {
             result *= a;
@@ -25,10 +27,10 @@ function pow(a, n) {
     }
 }
 
-
-function sumOrConcatenation(value1 = 20, value2 = 10){ 
-    if (!value1 && !value2) {console.log("30")} else {
-
+function sumOrConcatenation(value1 = 20, value2 = 10) { 
+    if (value1 === 0 && value2 === 0) {
+        console.log("30");
+    } else {
         if (typeof value1 === 'string' || typeof value2 === 'string') {
             console.log(`Результат конкатенації: ${String(value1) + String(value2)}`);
         } else if (typeof value1 === 'number' && typeof value2 === 'number') {
@@ -38,6 +40,7 @@ function sumOrConcatenation(value1 = 20, value2 = 10){
         }
     }
 }
+
 
 
 function Fb(number){
