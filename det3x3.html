@@ -39,7 +39,11 @@ document.getElementById('calculator-form').addEventListener('submit', function(e
   const num31 = parseFloat(document.getElementById('num31').value);
   const num32 = parseFloat(document.getElementById('num32').value);
   const num33 = parseFloat(document.getElementById('num33').value);
-  let result = num11*num22*num33 + num12*num23*num31 + num13*num21*num32 - num13*num22*num32 -num12*num21*num33; 
+  
+  const result = num11 * (num22 * num33 - num23 * num32) -
+                 num12 * (num21 * num33 - num23 * num31) +
+                 num13 * (num21 * num32 - num22 * num31);
+
   document.getElementById('result').textContent = `Результат: ${result}`;
 });
 </script>
