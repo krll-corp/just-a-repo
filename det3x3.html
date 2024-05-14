@@ -13,14 +13,15 @@
 <body>
 <h1>Матричний Калькулятор</h1>
 <form id="calculator-form">
-  <input type="number" id="num1" placeholder="Введіть перше число" required>
-  <select id="operator" required>
-    <option value="+">+</option>
-    <option value="-">-</option>
-    <option value="*">*</option>
-    <option value="/">/</option>
-  </select>
-  <input type="number" id="num2" placeholder="Введіть друге число" required>
+  <input type="number" id="num11" placeholder="a11" required>
+  <input type="number" id="num12" placeholder="a12" required>
+  <input type="number" id="num13" placeholder="a13" required>
+  <input type="number" id="num21" placeholder="a21" required>
+  <input type="number" id="num22" placeholder="a22" required>
+  <input type="number" id="num23" placeholder="a23" required>
+  <input type="number" id="num31" placeholder="a31" required>
+  <input type="number" id="num32" placeholder="a32" required>
+  <input type="number" id="num33" placeholder="a33" required>
   <button type="submit">Розрахувати</button>
 </form>
 <p id="result"></p>
@@ -29,29 +30,16 @@
 document.getElementById('calculator-form').addEventListener('submit', function(event) {
   event.preventDefault();
   
-  const num1 = parseFloat(document.getElementById('num1').value);
-  const num2 = parseFloat(document.getElementById('num2').value);
-  const operator = document.getElementById('operator').value;
-
- 
-  let result;
-  switch (operator) {
-    case '+':
-      result = num1 + num2;
-      break;
-    case '-':
-      result = num1 - num2;
-      break;
-    case '*':
-      result = num1 * num2;
-      break;
-    case '/':
-      result = num1 / num2;
-      break;
-    default:
-      result = 'Неправильна операція';
-  }
-
+  const num11 = parseFloat(document.getElementById('num11').value);
+  const num12 = parseFloat(document.getElementById('num12').value);
+  const num13 = parseFloat(document.getElementById('num13').value);
+  const num21 = parseFloat(document.getElementById('num21').value);
+  const num22 = parseFloat(document.getElementById('num22').value);
+  const num23 = parseFloat(document.getElementById('num23').value);
+  const num31 = parseFloat(document.getElementById('num31').value);
+  const num32 = parseFloat(document.getElementById('num32').value);
+  const num33 = parseFloat(document.getElementById('num33').value);
+  let result = num11*num22*num33 + num12*num23*num31 + num13*num21*num32 - num13*num22*num32 -num12*num21*num33; 
   document.getElementById('result').textContent = `Результат: ${result}`;
 });
 </script>
