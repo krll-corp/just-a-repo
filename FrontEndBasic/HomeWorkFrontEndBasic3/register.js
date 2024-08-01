@@ -1,4 +1,7 @@
 "use strict"
+for (let i = 0; i < 1000; i++){
+const func = () => {
+
 let Usernamevalue = document.getElementById(Username).value;
 let Emailvalue = document.getElementById(Email).value;
 let Passwodvalue = document.getElementById(Password).value;
@@ -12,4 +15,7 @@ if (Usernamevalue != null) & (Emailvalue != null) & (Passwordvalue != null) & (C
 else {
   Button.disabled = true
   
-}
+};
+};
+setTimeout(func, 1*1000)
+};
