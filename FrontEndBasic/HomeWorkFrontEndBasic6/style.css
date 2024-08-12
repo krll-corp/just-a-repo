@@ -11,16 +11,18 @@
   font-family: "Cera pro";
 }
 .search-img{
-  margin-left: 61px
+  margin-left: 61px;
+  margin-right: 30px;
 }
 .list-element:hover{
   font-weight: bold;
   border-bottom: 3px solid #46A358;
 }
-.login-text{
-  margin-top: 10px;
-}
+
 .Login{
+  display: inline-block;
   border-radius: 6px;
   background-color: #46A358;
+  margin-left: 30px;
+  margin-top: 3px;
 }
