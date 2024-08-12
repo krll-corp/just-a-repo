@@ -1,3 +1,26 @@
 .logo-img {
-  display: "inline-block"
+  display: inline-block;
+}
+.list {
+  display: inline-block;
+  margin-left: 229px;
+}
+.list-element {
+  display: inline-block;
+  margin-right: 50px;
+  font-family: "Cera pro";
+}
+.search-img{
+  margin-left: 61px
+}
+.list-element:hover{
+  font-weight: bold;
+  border-bottom: 3px solid #46A358;
+}
+.login-text{
+  margin-top: 10px;
+}
+.Login{
+  border-radius: 6px;
+  background-color: #46A358;
 }
