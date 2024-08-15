@@ -1,9 +1,14 @@
+.shop-img{
+  vertical-align: middle;
+}
 .logo-img {
   display: inline-block;
+  vertical-align: middle;
 }
 .list {
   display: inline-block;
   margin-left: 229px;
+  vertical-align: middle;
 }
 .list-element {
   display: inline-block;
@@ -11,8 +16,10 @@
   font-family: "Cera pro";
 }
 .search-img{
+  display: inline-block;
   margin-left: 61px;
   margin-right: 30px;
+  vertical-align: middle;
 }
 .list-element:hover{
   font-weight: bold;
@@ -20,6 +27,7 @@
 }
 
 .Login{
+  vertical-align: middle;
   display: inline-block;
   border-radius: 6px;
   background-color: #46A358;
@@ -28,4 +36,10 @@
 }
 .navigation{
   border-bottom: 1px;
+}
+.login-img{
+  vertical-align: middle;
+}
+.login-text{
+  vertical-align: middle;
 }
