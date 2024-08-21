@@ -1,12 +1,12 @@
 .side {
   background-color: #FBFBFB;
-  display: inline-block;
+  float: left;
   margin: 171px 0 0 135px;  
   width: 310px;
 }
 .side-items{
   display: inline-block;
-  margin: 14px 377px 193px 18px;
+  margin: 14px 377px 155px 18px;
 }
 .side-title {
   font-weight: 700;
@@ -57,4 +57,40 @@
 .sorting{
   display: inline-block;
 }
-
+.main-li-item{
+  float:left;
+  margin-right: 45px;
+  margin-bottom: 70px;
+}
+.img4{
+  width: 250px;
+  height: 250px;
+}
+.main-list{
+  width: 900px;
+}
+.name-flower{
+  display:block;
+}
+.main{
+  margin-left: 50px;
+  display: inline-block;
+}
+.main-li-item:nth-child(3n ){
+  margin-right: 0;
+}
+.price{
+  display: block;
+  color: #46A358;
+}
+.seventh eigth nineth{
+  margin-bottom: 0;
+}
+.bottom-list{
+  float: right;
+}
+.bottom-list-item{
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  display: inline-block; 
+}
