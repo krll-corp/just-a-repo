@@ -1,22 +1,60 @@
 .side {
-  margine-left: 135px;
   background-color: #FBFBFB;
   display: inline-block;
+  margin: 171px 0 0 135px;  
+  width: 310px;
+}
+.side-items{
+  display: inline-block;
+  margin: 14px 377px 193px 18px;
 }
 .side-title {
   font-weight: 700;
-  display: inline-block;
+  display: block;
 }
 .side-list-item {
   display: inline-block;
   font-weight: 400;
   color: #3D3D3D;
   text-underline-offset: 0px;
+  width: 100px;
+  margin: 11.5px 0;
 }
 .side-list-item:hover {
   color: #46A358;
 }
 .side-list {
   display: inline-block;
-  margine-left:12px;
+  margin-left: 12px;
 }
+.Super-Sale{
+  display: inline-block;
+  margin-left: -26px;
+}
+.navigation{
+  display: inline-block;
+  margin: 171px 0 0 50px;
+  vertical-align: top;
+}
+.navigation-list{
+  display: inline-block;
+}
+.navigation-list-item{
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 37px;
+}
+.navigation-list-item:first-child{
+  margin-left: 0;
+}
+.navigation-list-item:hover{
+  color: #46A358;
+  border-bottom: 2px solid #46A358;
+}
+.navigation-list-item:last-child{
+  margin-right: 385px;
+}
+.sorting{
+  display: inline-block;
+}
+
