@@ -1,0 +1,22 @@
+.side {
+  margine-left: 135px;
+  background-color: #FBFBFB;
+  display: inline-block;
+}
+.side-title {
+  font-weight: 700;
+  display: inline-block;
+}
+.side-list-item {
+  display: inline-block;
+  font-weight: 400;
+  color: #3D3D3D;
+  text-underline-offset: 0px;
+}
+.side-list-item:hover {
+  color: #46A358;
+}
+.side-list {
+  display: inline-block;
+  margine-left:12px;
+}
