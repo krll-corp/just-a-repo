@@ -22,7 +22,7 @@
   vertical-align: middle;
 }
 .list-element:hover{
-  font-weight: bold;
+  text-shadow:  0 1px; 
   border-bottom: 3px solid #46A358;
 }
 
@@ -33,6 +33,7 @@
   background-color: #46A358;
   margin-left: 30px;
   margin-top: 3px;
+  padding: 7.5px 27px;
 }
 .navigation{
   border-bottom: 1px;
@@ -42,4 +43,5 @@
 }
 .login-text{
   vertical-align: middle;
+  color: #FFFFFF
 }

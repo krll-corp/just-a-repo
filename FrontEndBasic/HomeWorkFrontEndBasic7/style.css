@@ -31,30 +31,30 @@
   display: inline-block;
   margin-left: -26px;
 }
-.navigation{
+.sorting{
   display: inline-block;
   margin: 171px 0 0 50px;
   vertical-align: top;
 }
-.navigation-list{
+.sorting-list{
   display: inline-block;
 }
-.navigation-list-item{
+.sorting-list-item{
   display: inline-block;
   font-weight: 700;
   margin-left: 37px;
 }
-.navigation-list-item:first-child{
+.sorting-list-item:first-child{
   margin-left: 0;
 }
-.navigation-list-item:hover{
+.sorting-list-item:hover{
   color: #46A358;
   border-bottom: 2px solid #46A358;
 }
-.navigation-list-item:last-child{
+.sorting-list-item:last-child{
   margin-right: 385px;
 }
-.sorting{
+.side-sorting{
   display: inline-block;
 }
 .main-li-item{
@@ -99,4 +99,8 @@
 }
 .bottom-list-item:hover{
   background-color: #46A358;
+}
+.container{
+  margin-right: auto;
+  margin-left: auto;
 }
