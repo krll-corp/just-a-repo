@@ -1,7 +1,7 @@
-.side {
+ .side {
   background-color: #FBFBFB;
-  float: left;
-  margin: 171px 0 0 135px;  
+  float: left; 
+  margin: 171px 50px 0 0; 
   width: 310px;
 }
 .side-items{
@@ -32,12 +32,11 @@
   margin-left: -26px;
 }
 .sorting{
-  display: inline-block;
-  margin: 171px 0 0 50px;
+  margin: 171px 0 0 0;
   vertical-align: top;
 }
 .sorting-list{
-  display: inline-block;
+  float: left;
 }
 .sorting-list-item{
   display: inline-block;
@@ -51,11 +50,13 @@
   color: #46A358;
   border-bottom: 2px solid #46A358;
 }
-.sorting-list-item:last-child{
-  margin-right: 385px;
+.sorting:after{
+ content: '';
+ clear: both;
+ display: block;
 }
 .side-sorting{
-  display: inline-block;
+ float: right;
 }
 .main-li-item{
   float:left;
@@ -67,14 +68,25 @@
   height: 250px;
 }
 .main-list{
-  width: 900px;
+  width: 900px;  
+}
+.main-list:after{
+ content: '';
+ display: block;
+ clear: both;
+}
+.bottom-list:after{
+ content: '';
+ clear: both;
 }
 .name-flower{
   display:block;
+  font-size: 16px;
+  margin-bottom: 6px;
 }
 .main{
-  margin-left: 50px;
-  display: inline-block;
+ display: inline-block;
+ max-width: 840px;
 }
 .main-li-item:nth-child(3n ){
   margin-right: 0;
@@ -82,6 +94,8 @@
 .price{
   display: block;
   color: #46A358;
+  font-size: 16px;
+  font-weight: bold;
 }
 .seventh eigth nineth{
   margin-bottom: 0;
@@ -92,15 +106,17 @@
 .bottom-list-item{
   border: 1px solid #E5E5E5;
   border-radius: 4px;
-  align-content: center;
   display: inline-block;
-  width: 18px;
-  height: 18px; 
+  width: 35px;
+  height: 35px; 
+  text-align: center;
+  padding-top: 4px;
+  font-size: 18px;
 }
 .bottom-list-item:hover{
   background-color: #46A358;
 }
 .container{
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  max-width: 1300px;
 }

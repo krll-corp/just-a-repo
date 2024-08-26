@@ -1,7 +1,5 @@
 .container{
-  display: flex;
-  flex-direction: column;
-  margin-left: 120px;
+  margin: 0 auto;
 }
 .first-part{
   border-bottom: 0.3px solid #46A358
@@ -9,7 +7,7 @@
 .second-part{
   width: 1211px;
   height: 470px;
-  background-clor: #F5F5F580
+  background-color: #F5F5F5;
 }
 .navigation{
   display: flex;
@@ -27,15 +25,12 @@
   border-bottom: 3px solid #46A358;
 }
 .side-pictures {
-  width: 209px;
-  display: flex;
-  justify-content: space-between;
+   
   align-items: center;
 }
 .Login{
   background-color: #46A358;
   border-radius: 6px;
-  display: flex;
   align-items: center;
 }
 .login-text{
