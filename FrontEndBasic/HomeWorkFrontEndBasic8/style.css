@@ -1,38 +1,16 @@
-.container{
-  margin: 0 auto;
-}
-.first-part{
-  border-bottom: 0.3px solid #46A358
-}
-.second-part{
-  width: 1211px;
-  height: 470px;
-  background-color: #F5F5F5;
-}
-.navigation{
+.flex-container{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
-.list{
+.top-part-flex-container{
   display: flex;
-  justify-content: space-between;
-  width: 351px
+  flex-direction: row;
 }
-
-.list-element:hover{
-  font-weight: bold;
-  border-bottom: 3px solid #46A358;
+.summer-cactus{
+  display: flex;
+  flex-direction: row;
+  
 }
-.side-pictures {
-   
-  align-items: center;
-}
-.Login{
-  background-color: #46A358;
-  border-radius: 6px;
-  align-items: center;
-}
-.login-text{
-  color: #FFFFFF
+.summer-cactus-text-part{
+  display: flex;
 }
