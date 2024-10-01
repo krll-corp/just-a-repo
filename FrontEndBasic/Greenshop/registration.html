@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/registration_style.css">
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <main>
+
+        <div class="closeBtn">
+            <a href="./index.html">
+
+                <img src="./img/registration/CloseBtn.png" alt="close">
+            </a>
+        </div>
+        <div class="switherLoginRegister">
+            <a class="loginLink" href="#">Login</a>
+            <span class="switherLoginRegisterDivider">I</span>
+            <a class="registerLink" href="#">Register</a>
+        </div>
+        <div class="titleRegister">
+            Enter your email and password to register.
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Username" name="username" id="username" required>
+            <input type="email" placeholder="Enter your email address" name="email" id="email" required>
+            <div class="passwordWrapper">
+                <input type="password" placeholder="Password" name="password" id="password" maxlength="20" required>
+                <img src="./img/registration/ShowPassword.png" alt="Toggle Password" class="togglePassword">
+            </div>
+            <input type="password" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword"
+                maxlength="20" required>
+            <button type="submit" class="submitButton">Register</button>
+        </form>
+        <div class="titleRegisterWith">
+            <span class="titleRegisterWithLine"></span>
+            <span>Or register with</span>
+            <span class="titleRegisterWithLine"></span>
+        </div>
+        <button class="googleBtn">
+            <img src="./img/registration/google.png" alt="google">
+            <span>Continue with Google</span>
+        </button>
+        <button class="facebookBtn">
+            <img src="./img/registration/facebook.png" alt="facebook">
+            <span>Continue with Facebook</span>
+        </button>
+        <div class="bottomStripe"></div>
+    </main>
+
+    <script src="./script/registration_script.js"></script>
+
+</body>
+
+</html>
